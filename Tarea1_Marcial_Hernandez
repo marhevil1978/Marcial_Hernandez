@@ -1,0 +1,61 @@
+"""Ejercicio 1"""
+nombre= input("Cual es tu nombre?")
+saludo= "Hola,"
+print( saludo, nombre)"""
+
+"""Ejercicio 2"""
+n1=int(input("ingrese el primer numero correspondiente"))
+n2=int(input("ingrese el segundonumero correspondiente"))
+suma=n1+n2
+resta=n1-n2
+multi=n1*n2
+division= n1/n2
+
+mensaje= f"""
+El resultado de las operaciones  entre los numeros" {n1} y {n2})
+Suma {suma}
+Resta {resta}
+Multiplicación {multi}
+División {division}"""
+print (mensaje)
+
+"""Ejercicio 3"""
+cantidad=int(input("ingrese el monto a invertir correspondiente"))
+interes=int(input("ingrese el interés anual correspondiente"))
+year=int(input("ingrese la cantidad de años correspondiente"))
+base1=((interes/100)+1)
+base2=pow(base1,year)
+total=cantidad*base2
+print("El total es",total)
+
+"""Ejercicio 4"""
+cantidad_payasos=int(input("ingrese el monto de payasos a comprar"))
+cantidad_doll=int(input("ingrese el monto de muñecas a comprar"))
+peso_payaso=cantidad_payasos*112
+peso_doll=cantidad_doll*75
+print("El peso de los payasos es",peso_payaso)
+print("El peso de las muñecas es",peso_doll)
+total_paquete= peso_doll+peso_payaso
+print("El peso total del paquete es:",total_paquete)
+
+
+"""Ejercicio 5"""
+cantidad=int(input("ingrese el monto de ahorros en su cuenta"))
+year=int(input("ingrese la cantidad de años correspondiente"))
+contador=1
+interes_ganado= cantidad*(1.04)
+print ("El interes ganado el año 1 es:",interes_ganado)
+while contador <= year:
+    interes_ganado_anual_acumulado=interes_ganado*(1.04)
+    print ("El interes ganado acumulado año {contador} es:", interes_ganado_anual_acumulado)
+    contador=contador+1
+	
+"""Ejercicio 6"""
+panviejo=int (input("ingrese la cantidad de pan no fresco"))
+precionormal=(3.49*panviejo)
+preciodescuento=((3.49*0.6)*panviejo)
+descuento =precionormal-preciodescuento
+print("El precio normal del pan es",precionormal)    
+print("El monto del descuento del pan es",round(descuento, 2))   
+print("El precio con descuento del pan no fresco es",preciodescuento)          
+	 
